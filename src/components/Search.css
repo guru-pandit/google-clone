@@ -18,7 +18,7 @@
   outline: none;
 }
 
-.search-input-icon {
+.search-inputIcon {
   color: gray;
 }
 
@@ -45,6 +45,6 @@
   color: #222;
 }
 
-.search-buttons-hidden {
+.search-buttonsHidden {
   display: none !important;
 }

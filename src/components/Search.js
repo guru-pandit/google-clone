@@ -28,7 +28,7 @@ function Search({ hideButtons = false }) {
   return (
     <form className="search">
       <div className="search-input">
-        <SearchIcon className="search-input-icon" />
+        <SearchIcon className="search-inputIcon" />
         <input value={input} onChange={(e) => setInput(e.target.value)} />
         <MicIcon />
       </div>
@@ -43,14 +43,14 @@ function Search({ hideButtons = false }) {
       ) : (
         <div className="search-buttons">
           <Button
-            className="search-buttons-hidden"
+            className="search-buttonsHidden"
             type="submit"
             onClick={search}
             variant="outlined"
           >
             Google Search
           </Button>
-          <Button className="search-buttons-hidden" variant="outlined">
+          <Button className="search-buttonsHidden" variant="outlined">
             I'm Feeling Lucky
           </Button>
         </div>

@@ -23,7 +23,7 @@ function Home() {
       <div className="home-body">
         <img src="images/google_logo.svg" alt="Google Logo" />
 
-        <div className="home-inputcontainer">
+        <div className="home-inputContainer">
           <Search />
         </div>
       </div>
