@@ -1,8 +1,7 @@
 import React from "react";
-import { useStateValue } from "../components/StateProvider";
-import useGoogleSearch from "../components/useGoogleSearch";
+import { useStateValue } from "../hooks/StateProvider";
+import useGoogleSearch from "../hooks/useGoogleSearch";
 import "./SearchPage.css";
-import Response from "./response";
 import { Link } from "react-router-dom";
 import Search from "../components/Search";
 import SearchIcon from "@material-ui/icons/Search";
@@ -13,7 +12,7 @@ import RoomIcon from "@material-ui/icons/Room";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 function SearchPage() {
-  const [{ term = "Capacitor" }, dispatch] = useStateValue();
+  const [{ term }, dispatch] = useStateValue();
 
   // Live API call
   const { data } = useGoogleSearch(term);
